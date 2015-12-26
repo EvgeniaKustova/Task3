@@ -10,62 +10,72 @@ public class Pl {
     static Scanner in = new Scanner(System.in);
     public static Logic lg;
 
+    enum Menu {
+        Menu, AddClient, AddProduct, AddOrder,AddProductOfOrder,
+        PrintClients, PrintProducts, PrintOrdersOfClient,
+        PrintProductsOfOrder, PrintOrdersOfProduct, DeleteClient,
+        DeleteProduct, DeleteOrder,DeleteProductFromOrder,
+        ChangeClientName,Close
+    }
+
     public static void main( String args[] ) throws SQLException {
             printMenu();
             lg = new Logic();
+            Menu [] menu = Menu.values();
             boolean end = false;
             System.out.println("Show menu - 0");
             System.out.println("Press a key: ");
             if (lg.CreateConnection()) {
                 while (true) {
                     int idx = Integer.parseInt(in.next());
-                    switch (idx) {
-                        case 0:
+
+                    switch (menu[idx].name()) {
+                        case "Menu":
                             printMenu();
                             break;
-                        case 1:
+                        case "AddClient":
                             AddNewClient();
                             break;
-                        case 2:
+                        case "AddProduct":
                             AddNewProduct();
                             break;
-                        case 3:
+                        case "AddOrder":
                             AddNewOrder();
                             break;
-                        case 4:
-                            AddNewProductAndOrder();
+                        case "AddProductOfOrder":
+                            AddNewProductOfOrder();
                             break;
-                        case 5:
+                        case "PrintClients":
                             PrintListOfClients();
                             break;
-                        case 6:
+                        case "PrintProducts":
                             PrintListOfProducts();
                             break;
-                        case 7:
+                        case "PrintOrdersOfClient":
                             PrintListOrdersOfClient();
                             break;
-                        case 8:
+                        case "PrintProductsOfOrder":
                             PrintListProductsOfOrder();
                             break;
-                        case 9:
+                        case "PrintOrdersOfProduct":
                             PrintListOrdersOfProduct();
                             break;
-                        case 10:
+                        case "DeleteClient":
                             DeleteClientFromTable();
                             break;
-                        case 11:
+                        case "DeleteProduct":
                             DeleteProductFromTable();
                             break;
-                        case 12:
+                        case "DeleteOrder":
                             DeleteOrderFromTable();
                             break;
-                        case 13:
+                        case "DeleteProductFromOrder":
                             DeleteProductFromOrder();
                             break;
-                        case 14:
+                        case "ChangeClientName":
                             ChangeNameOfClient();
                             break;
-                        case 15:
+                        case "Close":
                             CloseConnection();
                             end = true;
                             break;
@@ -135,7 +145,7 @@ public class Pl {
             System.out.println("Error!");
         }
     }
-    public static void AddNewProductAndOrder(){
+    public static void AddNewProductOfOrder(){
         try {
             System.out.println("Enter ID of order: ");
             int ID = in.nextInt();

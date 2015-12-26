@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/DAL/Dal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="267" column="84" selection-start-line="267" selection-start-column="50" selection-end-line="267" selection-end-column="84" />
+              <caret line="258" column="82" selection-start-line="258" selection-start-column="82" selection-end-line="258" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CreateConnection#0;class#Dal#0" expanded="false" />
@@ -64,6 +64,8 @@
                 <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
                 <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
                 <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+                <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+                <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
                 <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
                 <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
                 <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -74,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30307943">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#617#618#0" expanded="true" />
@@ -111,19 +113,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/PL/Pl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="178" column="49" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.38573745">
+              <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#Menu#0;class#Pl#0" expanded="false" />
                 <element signature="method#main#0;class#Pl#0" expanded="false" />
                 <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
                 <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
                 <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
                 <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-                <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+                <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
                 <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
                 <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
                 <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -161,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/com/company/Entity/Product.java" />
         <option value="$PROJECT_DIR$/src/com/company/Entity/Client.java" />
         <option value="$PROJECT_DIR$/src/com/company/Entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PL/Pl.java" />
         <option value="$PROJECT_DIR$/src/com/company/BLL/Logic.java" />
         <option value="$PROJECT_DIR$/src/com/company/DAL/Dal.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PL/Pl.java" />
       </list>
     </option>
   </component>
@@ -198,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -309,6 +311,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,8 +616,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -662,66 +665,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/BLL/Logic.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Entity/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CreateConnection#0;class#Logic#0" expanded="false" />
-            <element signature="method#CloseConnection#0;class#Logic#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Logic#0" expanded="false" />
-            <element signature="method#PrintListOfClients#0;class#Logic#0" expanded="false" />
-            <element signature="method#PrintListOfProducts#0;class#Logic#0" expanded="false" />
-            <element signature="method#PrintListOrdersOfClient#0;class#Logic#0" expanded="false" />
-            <element signature="method#PrintListProductsOfOrder#0;class#Logic#0" expanded="false" />
-            <element signature="method#PrintListOrdersOfProduct#0;class#Logic#0" expanded="false" />
-            <element signature="method#DeleteProductFromOrder#0;class#Logic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DAL/Dal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#CreateConnection#0;class#Dal#0" expanded="false" />
-            <element signature="method#dropAllTables#0;class#Dal#0" expanded="false" />
-            <element signature="method#CloseConnection#0;class#Dal#0" expanded="false" />
-            <element signature="method#CreateProductTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#CreateClientTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#CreateOrderTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#CreateProductAndOrderTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#AddNewProduct#0;class#Dal#0" expanded="false" />
-            <element signature="method#AddNewClient#0;class#Dal#0" expanded="false" />
-            <element signature="method#AddNewOrder#0;class#Dal#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Dal#0" expanded="false" />
-            <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
-            <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
-            <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
-            <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
-            <element signature="method#DeleteProductFromOrder#0;class#Dal#0" expanded="false" />
-            <element signature="method#UpdateClientInTable#0;class#Dal#0" expanded="false" />
-          </folding>
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PL/Pl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="299" column="41" selection-start-line="299" selection-start-column="41" selection-end-line="299" selection-end-column="41" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -776,6 +740,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -791,12 +757,91 @@
           <caret line="299" column="41" selection-start-line="299" selection-start-column="41" selection-end-line="299" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListProductsOfOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfProduct#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteClientFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteProductFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteOrderFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteProductFromOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#ChangeNameOfClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#CloseConnection#0;class#Pl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BLL/Logic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateConnection#0;class#Logic#0" expanded="false" />
+            <element signature="method#CloseConnection#0;class#Logic#0" expanded="false" />
+            <element signature="method#AddNewProductAndOrder#0;class#Logic#0" expanded="false" />
+            <element signature="method#PrintListOfClients#0;class#Logic#0" expanded="false" />
+            <element signature="method#PrintListOfProducts#0;class#Logic#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfClient#0;class#Logic#0" expanded="false" />
+            <element signature="method#PrintListProductsOfOrder#0;class#Logic#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfProduct#0;class#Logic#0" expanded="false" />
+            <element signature="method#DeleteProductFromOrder#0;class#Logic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DAL/Dal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateConnection#0;class#Dal#0" expanded="false" />
+            <element signature="method#dropAllTables#0;class#Dal#0" expanded="false" />
+            <element signature="method#CloseConnection#0;class#Dal#0" expanded="false" />
+            <element signature="method#CreateProductTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#CreateClientTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#CreateOrderTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#CreateProductAndOrderTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#AddNewProduct#0;class#Dal#0" expanded="false" />
+            <element signature="method#AddNewClient#0;class#Dal#0" expanded="false" />
+            <element signature="method#AddNewOrder#0;class#Dal#0" expanded="false" />
+            <element signature="method#AddNewProductAndOrder#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
+            <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
+            <element signature="method#DeleteProductFromOrder#0;class#Dal#0" expanded="false" />
+            <element signature="method#UpdateClientInTable#0;class#Dal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PL/Pl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="41" selection-start-line="299" selection-start-column="41" selection-end-line="299" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
+            <element signature="method#main#0;class#Pl#0" expanded="false" />
+            <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -865,6 +910,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -880,12 +927,13 @@
           <caret line="299" column="41" selection-start-line="299" selection-start-column="41" selection-end-line="299" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -954,6 +1002,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -969,12 +1019,13 @@
           <caret line="299" column="41" selection-start-line="299" selection-start-column="41" selection-end-line="299" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1043,6 +1094,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1058,12 +1111,13 @@
           <caret line="206" column="49" selection-start-line="206" selection-start-column="49" selection-end-line="206" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1132,6 +1186,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1147,12 +1203,13 @@
           <caret line="206" column="49" selection-start-line="206" selection-start-column="49" selection-end-line="206" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1221,6 +1278,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1243,12 +1302,13 @@
           <caret line="92" column="59" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1317,6 +1377,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1332,12 +1394,13 @@
           <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1406,6 +1469,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1421,12 +1486,13 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
             <element signature="method#main#0;class#Pl#0" expanded="false" />
             <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
             <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
             <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
@@ -1446,33 +1512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PL/Pl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="49" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Pl#0" expanded="false" />
-            <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#AddNewProductAndOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
-            <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
-            <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
-            <element signature="method#PrintListProductsOfOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#PrintListOrdersOfProduct#0;class#Pl#0" expanded="false" />
-            <element signature="method#DeleteClientFromTable#0;class#Pl#0" expanded="false" />
-            <element signature="method#DeleteProductFromTable#0;class#Pl#0" expanded="false" />
-            <element signature="method#DeleteOrderFromTable#0;class#Pl#0" expanded="false" />
-            <element signature="method#DeleteProductFromOrder#0;class#Pl#0" expanded="false" />
-            <element signature="method#ChangeNameOfClient#0;class#Pl#0" expanded="false" />
-            <element signature="method#CloseConnection#0;class#Pl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1514,10 +1553,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DAL/Dal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="267" column="84" selection-start-line="267" selection-start-column="50" selection-end-line="267" selection-end-column="84" />
+          <caret line="258" column="82" selection-start-line="258" selection-start-column="82" selection-end-line="258" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#CreateConnection#0;class#Dal#0" expanded="false" />
@@ -1534,6 +1585,8 @@
             <element signature="method#GetProductsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetClientsList#0;class#Dal#0" expanded="false" />
             <element signature="method#GetOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetProductOfOrderList#0;class#Dal#0" expanded="false" />
+            <element signature="method#GetOrderOfProductList#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteClientFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteProductFromTable#0;class#Dal#0" expanded="false" />
             <element signature="method#DeleteOrderFromTable#0;class#Dal#0" expanded="false" />
@@ -1543,14 +1596,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Entity/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/PL/Pl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30307943">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.38573745">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
+            <element signature="class#Menu#0;class#Pl#0" expanded="false" />
+            <element signature="method#main#0;class#Pl#0" expanded="false" />
+            <element signature="method#printMenu#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProduct#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#AddNewProductOfOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOfClients#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOfProducts#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListProductsOfOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#PrintListOrdersOfProduct#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteClientFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteProductFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteOrderFromTable#0;class#Pl#0" expanded="false" />
+            <element signature="method#DeleteProductFromOrder#0;class#Pl#0" expanded="false" />
+            <element signature="method#ChangeNameOfClient#0;class#Pl#0" expanded="false" />
+            <element signature="method#CloseConnection#0;class#Pl#0" expanded="false" />
           </folding>
         </state>
       </provider>
